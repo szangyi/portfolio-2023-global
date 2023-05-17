@@ -97,3 +97,19 @@
     color: #fff;
     opacity: 1;
 }
+
+
+/* -------------------------- */
+/* EXPLODE */
+/* -------------------------- */
+
+
+.mycustombutton.explode {
+
+}
+
+
+.mycustombutton.explode .button-text,
+.mycustombutton.explode .circle .icon.arrow  {
+    opacity: 0;
+}

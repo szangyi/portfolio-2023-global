@@ -15,7 +15,7 @@ import Nav from './components/Nav/Nav';
 function App() {
 
     return (
-        <React.Fragment>
+        <>
 
             <Banner component="header" />
 
@@ -24,7 +24,7 @@ function App() {
                 <Skills />
             </Box>
 
-        </React.Fragment>
+        </>
     );
 }
 

@@ -8,7 +8,7 @@ const MyCustomButton = (props) => {
 
     return (
         <React.Fragment>
-            <Box component="button" className="mycustombutton">
+            <Box component="button" className="mycustombutton" onClick={props.action}>
                 <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                 </span>

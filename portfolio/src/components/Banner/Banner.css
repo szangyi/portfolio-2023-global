@@ -3,6 +3,11 @@
     height: 100vh;
 }
 
+.banner button {
+    position: absolute;
+    right:0;
+
+}
 
 
 
@@ -43,6 +48,6 @@
 }
 
 
-#text-box-2 {
+/* #text-box-2 {
     transform: translateX(100vw)
-}
+} */
