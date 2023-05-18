@@ -11,7 +11,8 @@
     font-size: inherit;
     font-family: inherit;
 
-    width: 14rem; /* size of the button, should be adjusted when text is more */
+    width: 14rem;
+    /* size of the button, should be adjusted when text is more */
     height: auto;
 }
 
@@ -29,11 +30,11 @@
     margin-left: auto;
 
     width: 6rem;
-    height:6rem;
+    height: 6rem;
 }
 
 .mycustombutton .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    /* transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -42,13 +43,13 @@
 }
 
 .mycustombutton .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    /* transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); */
     right: 2.1rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
 
-    right: 2.5rem;
+    right: 2.7rem;
 }
 
 .mycustombutton .circle .icon.arrow::before {
@@ -64,7 +65,7 @@
 
     width: .9rem;
     height: .9rem;
-    top:-0.4rem;
+    top: -0.4rem;
 }
 
 .mycustombutton .button-text {
@@ -85,7 +86,7 @@
     padding: 1.65rem 0;
 
     opacity: 0;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -103,13 +104,30 @@
 /* EXPLODE */
 /* -------------------------- */
 
-
+/* 
 .mycustombutton.explode {
+    pointer-events: none;
+    right: 0;
+    margin-right: 0;
+}
 
+.mycustombutton.explode .circle {
+    transform: scale(5000%);
 }
 
 
 .mycustombutton.explode .button-text,
-.mycustombutton.explode .circle .icon.arrow  {
+.mycustombutton.explode .circle .icon.arrow {
     opacity: 0;
+    display: none;
+} */
+
+
+.mycustombutton.full-screen .circle {
+    border-radius: 0 0 10vmin 10vmin;
+}
+
+.mycustombutton.full-screen .button-text,
+.mycustombutton.full-screen .circle .icon.arrow {
+    display: none;
 }
