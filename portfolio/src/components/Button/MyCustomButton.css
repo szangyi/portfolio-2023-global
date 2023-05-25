@@ -1,4 +1,6 @@
 .mycustombutton {
+    /* display: none !important; */
+    
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -90,7 +92,9 @@
     align-items: center;
 }
 
-.mycustombutton:hover .circle {
+.mycustombutton:not(.growing):hover .circle,
+.mycustombutton:not(.full-screen):hover .circle
+{
     width: 100%;
 }
 
@@ -100,34 +104,46 @@
 }
 
 
+
+
+
 /* -------------------------- */
 /* EXPLODE */
 /* -------------------------- */
 
-/* 
-.mycustombutton.explode {
-    pointer-events: none;
-    right: 0;
-    margin-right: 0;
+.mycustombutton.growing,
+.mycustombutton.full-screen
+ {
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    
 }
 
-.mycustombutton.explode .circle {
-    transform: scale(5000%);
+.mycustombutton.fsm {
+    position:absolute;
 }
 
-
-.mycustombutton.explode .button-text,
-.mycustombutton.explode .circle .icon.arrow {
-    opacity: 0;
+.mycustombutton.growing .button-text,
+.mycustombutton.growing .circle .icon.arrow {
     display: none;
-} */
+}
 
-
+.mycustombutton.growing .circle,
 .mycustombutton.full-screen .circle {
-    border-radius: 0 0 10vmin 10vmin;
+    width: 100%;
+    height: 100%;
 }
 
-.mycustombutton.full-screen .button-text,
-.mycustombutton.full-screen .circle .icon.arrow {
+body.exploded .mycustombutton {
+    pointer-events: none;
+}
+
+body.exploded .mycustombutton .circle,
+body.exploded .mycustombutton .button-text
+ {
     display: none;
+    pointer-events: none;
+
 }

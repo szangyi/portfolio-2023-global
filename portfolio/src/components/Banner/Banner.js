@@ -1,70 +1,86 @@
 import "./Banner.css"
 
-import { gsap } from "gsap";
+import { gsap, Power1, TweenLite } from "gsap";
 import { React, useEffect, useState } from "react";
 import Typography from '@mui/material/Typography';
 import BokehBackground from "../BokehBackground/BokehBackground";
 import { Box } from "@mui/material";
 import MyCustomButton from "../Button/MyCustomButton";
+import AboutMe from "../../pages/AboutMe";
 
 
 const Banner = (props) => {
 
     const [circleHasFullScreenClass, setCircleHasFullScreenClass] = useState(false);
 
+    useEffect(() => {
+        // console.clear();
 
-    const buttonExplode = (e) => {
+        // setCircleHasFullScreenClass(circleHasFullScreenClass);
 
-        //Setup
-        var $fsm = document.querySelector('.fsm');
-        $fsm.style.position = "absolute";
+        var root = document.documentElement;
+        var body = document.body;
+        var page = document.querySelector(".page");
+        var tile = document.querySelector(".tile");
+        var triggerButton = document.querySelector(".triggerButton");
 
-        var position = {};
-        var size = {};
-
-        //modal action stuffs
-        var openFSM = function (event) {
-
+        triggerButton.addEventListener("click", function () {
+            animateHero(tile, page);
             setCircleHasFullScreenClass(!circleHasFullScreenClass);
+            body.classList.add('exploded')
+        });
 
 
-            var $this = event.currentTarget;
-            position = $this.getBoundingClientRect();
-            size = {
-                width: window.getComputedStyle($this).width,
-                height: window.getComputedStyle($this).height
+        function animateHero(fromHero, toHero) {
+
+            var clone = fromHero.cloneNode(true);
+
+            var from = calculatePosition(fromHero);
+            var to = calculatePosition(toHero);
+
+            TweenLite.set([fromHero, toHero], { visibility: "hidden" });
+            TweenLite.set(clone, { position: "absolute", margin: 0 });
+
+            body.appendChild(clone);
+
+            var style = {
+                x: to.left - from.left,
+                y: to.top - from.top,
+                width: to.width,
+                height: to.height,
+                autoRound: false,
+                ease: Power1.easeOut,
+                onComplete: onComplete
+            };
+
+            TweenLite.set(clone, from);
+            TweenLite.to(clone, 0.3, style)
+
+            function onComplete() {
+
+                TweenLite.set(toHero, { visibility: "visible" });
+                body.removeChild(clone);
             }
+        }
 
-            $fsm.style.position = "absolute";
-            $fsm.style.top = position.top + 'px';
-            $fsm.style.left = position.left + 'px';
-            $fsm.querySelector('.circle').style.height = size.height;
-            $fsm.querySelector('.circle').style.width = size.width;
-            $fsm.style.margin = $this.style.margin;
+        function calculatePosition(element) {
 
-            setTimeout(function () {
-                $fsm.innerHTML = $this.innerHTML;
-                var classes = $this.classList.value.split(' ');
-                for (var i = 0; i < classes.length; i++) {
-                    $fsm.classList.add(classes[i]);
-                }
-                $fsm.classList.add('growing');
-                $fsm.querySelector('.circle').style.height = '100vh';
-                $fsm.querySelector('.circle').style.width = '100vw';
-                $fsm.style.top = '0';
-                $fsm.style.left = '0';
-                $fsm.style.margin = '0';
-            }, 1);
+            var rect = element.getBoundingClientRect();
 
-            setTimeout(function () {
-                $fsm.classList.remove('growing');
-                $fsm.classList.add('full-screen');
-            }, 1000);
-        };
+            var scrollTop = window.pageYOffset || root.scrollTop || body.scrollTop || 0;
+            var scrollLeft = window.pageXOffset || root.scrollLeft || body.scrollLeft || 0;
 
-        $fsm.addEventListener("click", openFSM);
+            var clientTop = root.clientTop || body.clientTop || 0;
+            var clientLeft = root.clientLeft || body.clientLeft || 0;
 
-    };
+            return {
+                top: Math.round(rect.top + scrollTop - clientTop),
+                left: Math.round(rect.left + scrollLeft - clientLeft),
+                height: rect.height,
+                width: rect.width,
+            };
+        }
+    }, [])
 
 
     useEffect(() => {
@@ -131,11 +147,23 @@ const Banner = (props) => {
 
                 </Box>
 
-                <MyCustomButton component="button" customClass={'fsm'} action={buttonExplode} circleHasFullScreenClass={circleHasFullScreenClass}
+                <div className="tile-container">
+                    <div className="tile hero-1"></div>
+                </div>
+
+                <div className="page-container">
+                    <div className="page hero-1">
+
+                        {circleHasFullScreenClass ? <AboutMe /> : null}
+
+                    </div>
+                </div>
+
+                <MyCustomButton component="button"customClass="triggerButton" circleHasFullScreenclassName={circleHasFullScreenClass}
                 />
 
 
-            </Box>
+            </Box >
         </>
     )
 }

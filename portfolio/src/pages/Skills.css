@@ -1,0 +1,23 @@
+
+
+
+
+.skills-section ul {
+    margin-top: 5rem;
+}
+
+
+.skills-section ul li {
+    text-transform: lowercase;
+    width: fit-content;
+}
+
+
+svg .cls-1 {
+    /* fill: #1d1c20; */
+}
+
+svg g.active {
+    fill: red;
+
+}

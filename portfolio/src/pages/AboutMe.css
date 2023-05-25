@@ -1,6 +1,8 @@
 .aboutme-section {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.835171568627451) 87%, rgba(255, 255, 255, 1) 100%);
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.835171568627451) 87%, rgba(255, 255, 255, 1) 100%); */
+  background: black;
+  color: white;
 }
 
 

@@ -376,3 +376,7 @@
     transform-origin: -14vw 24vh;
     box-shadow: -100vmin 0 60.766052801603761vmin currentColor;
 }
+
+body.exploded .banner .bokeh-background{
+   display: none;
+}

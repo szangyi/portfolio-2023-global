@@ -55,7 +55,7 @@ let theme = createTheme({
         },
         h2: {
             fontFamily: 'Industry',
-            fontWeight: 800,
+            fontWeight: 100,
         },
         h3: {
             fontFamily: 'Industry',
@@ -87,6 +87,14 @@ let theme = createTheme({
         },
         overline: {
             fontSize: '0.6rem',
+        },
+        paragraph: {
+            fontFamily: 'Hanken Grotesk',
+            fontSize: '20px',
+            lineHeight: 1.8,
+        },
+        body1: {
+            fontFamily: 'Hanken Grotesk',
         },
     },
     shape: {
