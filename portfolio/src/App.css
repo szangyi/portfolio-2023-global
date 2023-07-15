@@ -30,7 +30,7 @@ body {
 /* font-family: 'Hanken Grotesk', sans-serif; */
 
 
-body:not(.exploded) main {
+body:not(.exploded) .core {
     display: none;
 }
 
@@ -59,4 +59,43 @@ ul ul li {
 
 ul {
     list-style-type: none;
+}
+
+
+
+/* ----------------------- */
+/* LAYOUT ---------------- */
+/* ----------------------- */
+
+#root-layout {
+    width: 200vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* ----------------------- */
+/* LAYOUT ---------------- */
+/* ----------------------- */
+
+
+#root-layout.project-open {
+    background-color: magenta !important;
+}
+
+
+#root-layout {
+    margin-left: 0;
+    transition: .5s ease-in;
+}
+/* 
+#root-layout .project-container {
+    margin-left: 100vw;
+    transition: .5s ease-in;
+} */
+
+/* IF PROJECT-OPEN */
+#root-layout.project-open  {
+    margin-left: -100vw;
 }

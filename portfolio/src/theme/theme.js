@@ -48,7 +48,7 @@ let theme = createTheme({
 
 
     typography: {
-        fontFamily: 'Hanken Grotesk',
+        fontFamily: 'Hanken Grotesk, sans-serif',
         h1: {
             fontFamily: 'Industry',
             fontWeight: 800,
@@ -64,7 +64,7 @@ let theme = createTheme({
         },
         h4: {
             fontFamily: 'Industry',
-            fontWeight: 800,
+            fontWeight: 600,
             fontSize: '1.7rem',
         },
         h5: {
@@ -89,12 +89,12 @@ let theme = createTheme({
             fontSize: '0.6rem',
         },
         paragraph: {
-            fontFamily: 'Hanken Grotesk',
+            fontFamily: 'Hanken Grotesk, sans-serif',
             fontSize: '20px',
             lineHeight: 1.8,
         },
         body1: {
-            fontFamily: 'Hanken Grotesk',
+            fontFamily: 'Hanken Grotesk, sans-serif',
         },
     },
     shape: {

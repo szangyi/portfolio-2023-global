@@ -29,6 +29,9 @@
 [class*='bokeh-background'][variant="light"] {
     /* background-color: #ffffff; */
     background-color: #EFEFEF;
+    /* background-color: #E8E4E1; */
+    /* background-color: #B8AFA9; */
+    /* background-color: #B8AFA9; */
 
 }
 
@@ -67,16 +70,20 @@
     animation-delay: -224s;
     transform-origin: 2vw 24vh;
     box-shadow: -100vmin 0 60.557152630100502vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.557152630100502vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.557152630100502vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(1) {
-    color: #e492c9;
+    color: #75448c;
     top: 1%;
     left: 51%;
     animation-duration: 10s;
     animation-delay: -142s;
     transform-origin: 0vw -6vh;
     box-shadow: 100vmin 0 60.848499096310599vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.848499096310599vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.848499096310599vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(2) {
@@ -87,6 +94,8 @@
     animation-delay: -208s;
     transform-origin: 0vw 4vh;
     box-shadow: -100vmin 0 60.611758276291951vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.611758276291951vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.611758276291951vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(3) {
@@ -97,6 +106,8 @@
     animation-delay: -52s;
     transform-origin: -19vw 20vh;
     box-shadow: 100vmin 0 100.295340733020257vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.295340733020257vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.295340733020257vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(4) {
@@ -107,6 +118,8 @@
     animation-delay: -144s;
     transform-origin: 10vw 5vh;
     box-shadow: -100vmin 0 100.362835110084648vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.362835110084648vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.362835110084648vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(5) {
@@ -117,6 +130,8 @@
     animation-delay: -172s;
     transform-origin: 19vw -10vh;
     box-shadow: -100vmin 0 60.717839639078836vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.717839639078836vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.717839639078836vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(6) {
@@ -127,6 +142,8 @@
     animation-delay: -213s;
     transform-origin: 12vw 8vh;
     box-shadow: 100vmin 0 100.097276994118364vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.097276994118364vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.097276994118364vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(7) {
@@ -137,6 +154,8 @@
     animation-delay: -167s;
     transform-origin: 13vw 1vh;
     box-shadow: -100vmin 0 60.801741390699865vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.801741390699865vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.801741390699865vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(8) {
@@ -147,6 +166,8 @@
     animation-delay: -185s;
     transform-origin: -23vw 19vh;
     box-shadow: -100vmin 0 60.788085351757552vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.788085351757552vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.788085351757552vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(9) {
@@ -157,6 +178,8 @@
     animation-delay: -226s;
     transform-origin: 18vw 0vh;
     box-shadow: 100vmin 0 60.862167121195686vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.862167121195686vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.862167121195686vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(10) {
@@ -167,6 +190,8 @@
     animation-delay: -226s;
     transform-origin: 10vw 22vh;
     box-shadow: 100vmin 0 60.892615054734334vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.892615054734334vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.892615054734334vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(11) {
@@ -177,6 +202,8 @@
     animation-delay: -60s;
     transform-origin: 10vw 0vh;
     box-shadow: -100vmin 0 100.08442164286128vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.08442164286128vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.08442164286128vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(12) {
@@ -187,6 +214,8 @@
     animation-delay: -11s;
     transform-origin: 2vw 2vh;
     box-shadow: -100vmin 0 60.933524917852205vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.933524917852205vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.933524917852205vmin currentColor;
 }
 
 /* [class*='bokeh-background'] span:nth-child(13) {
@@ -197,6 +226,8 @@
     animation-delay: -68s;
     transform-origin: 17vw -5vh;
     box-shadow: 100vmin 0 100.356101269718575vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.356101269718575vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.356101269718575vmin currentColor;
 } */
 [class*='bokeh-background'] span:nth-child(14) {
     color: #e492c9;
@@ -206,6 +237,8 @@
     animation-delay: -74s;
     transform-origin: 20vw -11vh;
     box-shadow: -100vmin 0 100.090528696646794vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.090528696646794vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.090528696646794vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(15) {
@@ -216,6 +249,8 @@
     animation-delay: -72s;
     transform-origin: 17vw -5vh;
     box-shadow: -100vmin 0 100.261172110681215vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.261172110681215vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.261172110681215vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(16) {
@@ -226,6 +261,8 @@
     animation-delay: -6s;
     transform-origin: 21vw 5vh;
     box-shadow: 100vmin 0 100.061914401188213vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.061914401188213vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.061914401188213vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(17) {
@@ -236,6 +273,8 @@
     animation-delay: -145s;
     transform-origin: -24vw 15vh;
     box-shadow: 100vmin 0 100.424722521694338vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.424722521694338vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.424722521694338vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(18) {
@@ -246,6 +285,8 @@
     animation-delay: -215s;
     transform-origin: 17vw 15vh;
     box-shadow: -100vmin 0 100.156022856170088vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.156022856170088vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.156022856170088vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(19) {
@@ -256,6 +297,8 @@
     animation-delay: -117s;
     transform-origin: -23vw -7vh;
     box-shadow: 100vmin 0 60.805344974913334vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.805344974913334vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.805344974913334vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(20) {
@@ -266,6 +309,8 @@
     animation-delay: -110s;
     transform-origin: 23vw 16vh;
     box-shadow: -100vmin 0 100.008251774198094vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.008251774198094vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.008251774198094vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(21) {
@@ -276,6 +321,8 @@
     animation-delay: -148s;
     transform-origin: -9vw -4vh;
     box-shadow: -100vmin 0 100.002638800607373vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.002638800607373vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.002638800607373vmin currentColor;
 }
 
 /* [class*='bokeh-background'] span:nth-child(22) {
@@ -286,6 +333,8 @@
     animation-delay: -77s;
     transform-origin: -15vw -3vh;
     box-shadow: -100vmin 0 60.70275760828242vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.70275760828242vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.70275760828242vmin currentColor;
 } */
 [class*='bokeh-background'] span:nth-child(23) {
     color: #e492c9;
@@ -295,6 +344,8 @@
     animation-delay: -7s;
     transform-origin: 16vw 24vh;
     box-shadow: 100vmin 0 100.454956690937653vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.454956690937653vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.454956690937653vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(24) {
@@ -305,6 +356,8 @@
     animation-delay: -161s;
     transform-origin: -1vw 0vh;
     box-shadow: -100vmin 0 100.085079678276411vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.085079678276411vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.085079678276411vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(25) {
@@ -315,6 +368,8 @@
     animation-delay: -120s;
     transform-origin: 1vw -13vh;
     box-shadow: -100vmin 0 100.333155200930987vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.333155200930987vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.333155200930987vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(26) {
@@ -325,6 +380,8 @@
     animation-delay: -204s;
     transform-origin: -24vw 6vh;
     box-shadow: 100vmin 0 100.143223800681506vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 100.143223800681506vmin currentColor;
+    -moz-box-shadow: 100vmin 0 100.143223800681506vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(27) {
@@ -335,6 +392,8 @@
     animation-delay: -144s;
     transform-origin: -7vw -23vh;
     box-shadow: -100vmin 0 100.366651221122059vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 100.366651221122059vmin currentColor;
+    -moz-box-shadow: -100vmin 0 100.366651221122059vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(28) {
@@ -345,6 +404,8 @@
     animation-delay: -78s;
     transform-origin: 5vw 6vh;
     box-shadow: 100vmin 0 60.563320759799296vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.563320759799296vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.563320759799296vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(29) {
@@ -355,6 +416,8 @@
     animation-delay: -33s;
     transform-origin: -6vw -14vh;
     box-shadow: 100vmin 0 60.669428225657677vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.669428225657677vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.669428225657677vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(30) {
@@ -365,6 +428,8 @@
     animation-delay: -69s;
     transform-origin: 16vw 12vh;
     box-shadow: 100vmin 0 60.820368783206412vmin currentColor;
+    -webkit-box-shadow: 100vmin 0 60.820368783206412vmin currentColor;
+    -moz-box-shadow: 100vmin 0 60.820368783206412vmin currentColor;
 }
 
 [class*='bokeh-background'] span:nth-child(31) {
@@ -375,6 +440,8 @@
     animation-delay: -52s;
     transform-origin: -14vw 24vh;
     box-shadow: -100vmin 0 60.766052801603761vmin currentColor;
+    -webkit-box-shadow: -100vmin 0 60.766052801603761vmin currentColor;
+    -moz-box-shadow: -100vmin 0 60.766052801603761vmin currentColor;
 }
 
 body.exploded .banner .bokeh-background{

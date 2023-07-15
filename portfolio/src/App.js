@@ -1,39 +1,34 @@
 import * as React from 'react';
-import './App.css';
-
-import { Box, Toolbar, Typography } from '@mui/material/';
-
 import { useState } from 'react';
-import BokehBackground from './components/BokehBackground/BokehBackground'
-import Banner from './components/Banner/Banner';
-import AboutMe from './pages/AboutMe';
-import Skills from './pages/Skills';
-import Nav from './components/Nav/Nav';
-// import MeshGradient from './components/MeshGradient/MeshGradient';
-
+import './App.css';
+import Home from './pages/Home';
+import Project from './pages/projects/Project';
+import { Box } from '@mui/material';
 
 
 function App() {
 
     // const [bodyHasExplodedClass, setbodyHasExplodedClass] = useState(false);
+    const [ActiveProject, setActiveProject] = useState(false);
+
+    console.log(ActiveProject);
+
+    function toggleProject(projectName) {
+        console.log('toggggii');
+
+        setActiveProject(projectName)
+        console.log(ActiveProject);
+    }
+
 
     return (
         <>
-
-            <BokehBackground numSpans={3} variant="light" />
-
-
-            <Banner component="header" />
-
-            <Box component="main" sx={{ flexGrow: 1 }} >
-                {/* <Nav /> */}
-                <Skills />
+            <Box id="root-layout" className={ActiveProject !== false ? 'project-open' : ''}>
+                <Home toggleProject={toggleProject} />
+                <Project projectName={ActiveProject} />
             </Box>
-
-
-
         </>
-    );
+    )
 }
 
 export default App;

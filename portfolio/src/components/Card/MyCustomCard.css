@@ -1,0 +1,99 @@
+.mycustomcard {
+
+    /* min-width: 30vw; */
+
+}
+
+
+/* CARD CHILDREN */
+.mycustomcard .card-image-container {
+    /* width: 70%; */
+    /* margin: auto; */
+}
+
+/* TYPOGRAPHY */
+.mycustomcard h5 {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.mycustomcard h4 {
+    font-family: 'Hanken Grotesk';
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/* INTERACTIONS */
+.card-click {
+    padding: 0 !important;
+}
+
+.card-click>* {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+/* FROM OLD HOVER EFFECT AND ALL THAT */
+
+.mycustomcard img {
+    width: fill;
+    width: -webkit-fill-available;
+    max-height:200px;
+    transform: scale(1);
+    transition: .2s ease-in;
+}
+
+.card-content-container * {
+    padding: 0 !important;
+}
+
+.card-container .mycustomcard {
+    transition: .2s ease-in;
+}
+
+.card-container:hover .mycustomcard {
+    transform:scale(.97);
+    background-color: white !important;
+}
+
+.card-container:hover img {
+    transform:scale(1.2);
+}
+
+.card-container {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-click {
+    /* background: rosybrown; */
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.card-container {
+    display: flex;
+
+}
+
+.card-container .mycustomcard {
+    /* min-width: 250px; */
+}
+
+.cards-collection {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.cards-collection .card-container .mycustomcard,
+.cards-collection .card-container
+{
+    width:inherit
+}

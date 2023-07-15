@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import theme from './theme/theme.js'
+import './style/style.css';
 // import { ThemeProvider } from '@mui/material';
 import { ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter } from 'react-router-dom'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +15,9 @@ root.render(
   // <React.StrictMode>
   <>
     <ThemeProvider theme={theme}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
     </ThemeProvider>
   </>
   // </React.StrictMode> 

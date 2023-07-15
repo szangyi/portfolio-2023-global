@@ -1,6 +1,8 @@
 
 
-
+.skills-section {
+    max-width: 100vw;
+}
 
 .skills-section ul {
     margin-top: 5rem;
@@ -17,7 +19,50 @@ svg .cls-1 {
     /* fill: #1d1c20; */
 }
 
-svg g.active {
-    fill: red;
+svg {
+    display:block;
+    max-height: 90vh;
+}
 
+svg g {
+    transition: .2s ease-out;
+
+}
+
+svg g#CODE g.active {
+    fill: #ce7eb3;
+}
+
+svg g#DESIGN g.active {
+    fill: #75448c;
+}
+
+svg g#SOFT g.active {
+    fill: #f1b582;
+}
+
+svg g#PLUS g.active {
+    fill: #B8AFA9;
+}
+
+
+
+
+.grid-container-special {
+    display: grid;
+
+}
+
+.grid-container-special > * {
+    grid-area: 1 / 1;
+}
+
+.grid-item-svg {
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-svg svg {
+    margin: auto;
 }
