@@ -15,7 +15,7 @@ const BokehBackground = (props) => {
 
 
     return (
-        <div variant={props.variant} className={`bokeh-background ${props.customClass}`}>
+        <div variant={props.variant} width={props.width} className={`bokeh-background ${props.customClass}`}>
 
             {renderSpans()}
             

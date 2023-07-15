@@ -82,6 +82,11 @@ let theme = createTheme({
             fontWeight: 500,
             textTransform: 'uppercase',
         },
+        subtitle2: {
+            fontSize: '2rem',
+            fontWeight: 500,
+            textTransform: 'uppercase',
+        },
         button: {
             fontWeight: 600,
         },

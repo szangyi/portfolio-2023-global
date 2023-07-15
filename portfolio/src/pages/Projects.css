@@ -11,7 +11,9 @@
 }
 
 .project-container {
-    background-color: aqua;
+    /* background-color: aqua; */
+    /* background-color: white; */
+    /* background-color: #BBBBBB; */
     height: 100%;
 }
 
@@ -31,3 +33,27 @@
     height: fit-content;
 }
 
+
+
+/* ------------- */
+/* PROJECT PAGE  */
+/* ------------- */
+
+.project-page {
+    height: inherit;
+    width: 100%;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.chip-collection .MuiChip-root {
+    color: white;
+    border-color: white;
+}
+
+.chip-look {
+    border: 1px solid black;
+    border-radius: 50vh;
+    width:fit-content
+
+}

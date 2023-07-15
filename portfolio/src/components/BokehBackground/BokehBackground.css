@@ -22,6 +22,10 @@
     top: 0;
 }
 
+[class*='bokeh-background'][width="200"] {
+    width: 200vw;
+}
+
 [class*='bokeh-background'][variant="dark"] {
     background-color: #081517;
 }
@@ -29,10 +33,16 @@
 [class*='bokeh-background'][variant="light"] {
     /* background-color: #ffffff; */
     background-color: #EFEFEF;
+    transition: .5s ease;
     /* background-color: #E8E4E1; */
     /* background-color: #B8AFA9; */
     /* background-color: #B8AFA9; */
 
+}
+
+#root-layout.project-open [class*='bokeh-background'][variant="light"]{
+    background-color: #aaaaaabb;
+    /* background-color: #AE5E99; */
 }
 
 [class*='bokeh-background'] span {

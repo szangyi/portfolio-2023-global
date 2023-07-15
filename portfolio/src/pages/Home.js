@@ -17,7 +17,6 @@ function Home(props) {
     return (
         <>
             <Box component="main" sx={{ flexGrow: 1 }}  >
-                <BokehBackground numSpans={3} variant="light" />
                 <Banner component="header" />
                 {/* <Nav /> */}
 

@@ -5,16 +5,14 @@ import Project1 from "./Project1-Henkel";
 import Project2 from "./Project2-Twitter";
 
 function Project(props) {
-    console.log('proprppssss')
-    console.log(props.projectName)
 
     return (
         <>
             <section className="project-container">
-                {props.projectName === 'pass' ? (
-                    <Project1 />
-                ) : props.projectName === 'passs' ? (
-                    <Project2 />
+                {props.projectName === '1' ? (
+                    <Project1 toggleProject={props.toggleProject} />
+                ) : props.projectName === '2' ? (
+                    <Project2 toggleProject={props.toggleProject} />
                 ) : (
                     <section className="default-container">
                         <h1>Default Section</h1>

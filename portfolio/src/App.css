@@ -79,9 +79,12 @@ ul {
 /* LAYOUT ---------------- */
 /* ----------------------- */
 
+body.project-open {
+    overflow: hidden;
+}
 
 #root-layout.project-open {
-    background-color: magenta !important;
+    /* background-color: magenta !important; */
 }
 
 

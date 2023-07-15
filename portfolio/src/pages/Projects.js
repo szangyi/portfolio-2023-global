@@ -62,8 +62,9 @@ const Projects = (props) => {
                         </CardContent>
 
                         <CardActions className="card-click">
-                            {/* <Box component={Link} to={`/profile/${array[2]}`}></Box> */}
-                        </CardActions>
+                            <Typography onClick={() => props.toggleProject('1')}>
+                                to Project
+                            </Typography>                        </CardActions>
                     </Card>
                 </Grid>
 
@@ -98,8 +99,9 @@ const Projects = (props) => {
                         </CardContent>
 
                         <CardActions className="card-click">
-                            {/* <Box component={Link} to={`/profile/${array[2]}`}></Box> */}
-                        </CardActions>
+                            <Typography onClick={() => props.toggleProject('2')}>
+                                to Project
+                            </Typography>                        </CardActions>
                     </Card>
                 </Grid>
 
@@ -137,10 +139,9 @@ const Projects = (props) => {
                         <CardActions className="card-click">
                             {/* <Box component={Link} to={`/profile/${array[2]}`}></Box> */}
 
-                            <Typography onClick={() => props.toggleProject('passs')}>
+                            <Typography onClick={() => props.toggleProject('3')}>
                                 to Project
                             </Typography>
-
 
                         </CardActions>
                     </Card>
