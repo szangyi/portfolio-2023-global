@@ -85,6 +85,7 @@ const Banner = (props) => {
 
     useEffect(() => {
         const intro = () => {
+            console.log('intro')
             const tl = gsap.timeline();
             tl.to(('#text-box-1'), {
                 opacity: 0,
@@ -97,11 +98,8 @@ const Banner = (props) => {
 
         const middle = () => {
             const tl = gsap.timeline();
-            tl.to(('#text-box-2'), {
-                translateX: 0,
-                duration: 2,
-                delay: 0,
-            });
+            tl.from(('#text-box-2'), { translateX: 500, delay: 0.5,});
+            tl.to(('#text-box-2'), { translateX: -500, delay: 3.5,});
             return tl;
         };
 
@@ -132,10 +130,10 @@ const Banner = (props) => {
 
                 <Box className="text-container" sx={{ px: { xs: 2, lg: 10 }, py: { xs: 2, lg: 10 }, }}>
 
-                    {/* <Box id="text-box-1" sx={{ width: { xs: '100%', lg: '60%' } }}>
+                    <Box id="text-box-1" sx={{ width: { xs: '100%', lg: '60%' } }}>
                         <Typography variant="h1" className="font-thin">  Welcome to my world where</Typography>
                         <Typography variant="h1"> design meets code</Typography>
-                    </Box> */}
+                    </Box>
 
                     <Box id="text-box-2">
                         <Box sx={{ width: { xs: '100%', lg: '80%' } }}>

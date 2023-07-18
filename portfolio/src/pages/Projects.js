@@ -9,6 +9,12 @@ import CardMedia from '@mui/material/CardMedia';
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.jpg'
 import img3 from '../assets/img3.jpg'
+import project1 from '../assets/project1.png'
+import project2 from '../assets/project2.png'
+import project3 from '../assets/project3.png'
+import project4 from '../assets/project4.png'
+import project5 from '../assets/project5.png'
+import project6 from '../assets/placeholder.png'
 
 
 const Projects = (props) => {
@@ -31,6 +37,7 @@ const Projects = (props) => {
 
             <Grid className="cards-collection" container sx={{ gap: '20px' }}>
 
+                {/* HENKEL */}
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
@@ -55,7 +62,7 @@ const Projects = (props) => {
                                     component="img"
                                     alt="profile image"
                                     sx={{}}
-                                    image={'https://i.postimg.cc/sgKmyhJv/influncr.png'}
+                                    image={project1}
                                 />
                             </Box>
 
@@ -63,11 +70,14 @@ const Projects = (props) => {
 
                         <CardActions className="card-click">
                             <Typography onClick={() => props.toggleProject('1')}>
-                                to Project
-                            </Typography>                        </CardActions>
+
+                            </Typography>
+                        </CardActions>
                     </Card>
                 </Grid>
 
+
+                {/* INFLUENCR */}
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
@@ -77,11 +87,11 @@ const Projects = (props) => {
                                 <Box>
 
                                     <Typography gutterBottom variant="h5" color="text.secondary" sx={{ fontWeight: 500 }}>
-                                        Javascript & Vue.js & Lottie
+                                        React.js & Python & MUI & MySQL
                                     </Typography>
 
                                     <Typography gutterBottom variant="h4" sx={{ mt: 3 }}>
-                                        Massive amount of Javascript on a gamified e-learning platform
+                                        An influencer collection page
                                     </Typography>
 
                                 </Box>
@@ -92,7 +102,7 @@ const Projects = (props) => {
                                     component="img"
                                     alt="profile image"
                                     sx={{}}
-                                    image={'https://i.postimg.cc/sgKmyhJv/influncr.png'}
+                                    image={project2}
                                 />
                             </Box>
 
@@ -100,12 +110,13 @@ const Projects = (props) => {
 
                         <CardActions className="card-click">
                             <Typography onClick={() => props.toggleProject('2')}>
-                                to Project
-                            </Typography>                        </CardActions>
+
+                            </Typography>
+                        </CardActions>
                     </Card>
                 </Grid>
 
-
+                {/* TWITTER */}
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
@@ -115,11 +126,11 @@ const Projects = (props) => {
                                 <Box>
 
                                     <Typography gutterBottom variant="h5" color="text.secondary" sx={{ fontWeight: 500 }}>
-                                        Javascript & Vue.js & Lottie
+                                        Python & TailwindCSS & MySQL
                                     </Typography>
 
                                     <Typography gutterBottom variant="h4" sx={{ mt: 3 }}>
-                                        Massive amount of Javascript on a gamified e-learning platform
+                                        My kind of Twitter as my first Python playground
                                     </Typography>
 
                                 </Box>
@@ -130,7 +141,7 @@ const Projects = (props) => {
                                     component="img"
                                     alt="profile image"
                                     sx={{}}
-                                    image={'https://i.postimg.cc/sgKmyhJv/influncr.png'}
+                                    image={project3}
                                 />
                             </Box>
 
@@ -140,9 +151,123 @@ const Projects = (props) => {
                             {/* <Box component={Link} to={`/profile/${array[2]}`}></Box> */}
 
                             <Typography onClick={() => props.toggleProject('3')}>
-                                to Project
+
                             </Typography>
 
+                        </CardActions>
+                    </Card>
+                </Grid>
+
+                {/* OPENLOOP */}
+                <Grid item className="card-container">
+                    <Card className="mycustomcard glassmorphism" >
+
+                        <CardContent className='card-content' sx={{ p: 4 }}>
+
+                            <Box className="card-content-container" >
+                                <Box>
+
+                                    <Typography gutterBottom variant="h5" color="text.secondary" sx={{ fontWeight: 500 }}>
+                                        PHP & Wordpress & GSAP
+                                    </Typography>
+
+                                    <Typography gutterBottom variant="h4" sx={{ mt: 3 }}>
+                                        Manipulating core code of Wordpress
+                                    </Typography>
+
+                                </Box>
+                            </Box>
+
+                            <Box className="card-image-container" sx={{ mt: 6 }}>
+                                <CardMedia
+                                    component="img"
+                                    alt="profile image"
+                                    sx={{}}
+                                    image={project4}
+                                />
+                            </Box>
+
+                        </CardContent>
+
+                        <CardActions className="card-click">
+                            <Typography onClick={() => props.toggleProject('4')}>
+                            </Typography>
+                        </CardActions>
+                    </Card>
+                </Grid>
+
+                {/* INDIVIDUALS */}
+                <Grid item className="card-container">
+                    <Card className="mycustomcard glassmorphism" >
+
+                        <CardContent className='card-content' sx={{ p: 4 }}>
+
+                            <Box className="card-content-container" >
+                                <Box>
+
+                                    <Typography gutterBottom variant="h5" color="text.secondary" sx={{ fontWeight: 500 }}>
+                                        Javascript & Wordpress & SCSS & Design
+                                    </Typography>
+
+                                    <Typography gutterBottom variant="h4" sx={{ mt: 3 }}>
+                                        Rebranding of a consultancy website
+                                    </Typography>
+
+                                </Box>
+                            </Box>
+
+                            <Box className="card-image-container" sx={{ mt: 6 }}>
+                                <CardMedia
+                                    component="img"
+                                    alt="profile image"
+                                    sx={{}}
+                                    image={project5}
+                                />
+                            </Box>
+
+                        </CardContent>
+
+                        <CardActions className="card-click">
+                            <Typography onClick={() => props.toggleProject('5')}>
+                            </Typography>
+                        </CardActions>
+                    </Card>
+                </Grid>
+
+                {/* PINTEREST */}
+                <Grid item className="card-container">
+                    <Card className="mycustomcard glassmorphism" >
+
+                        <CardContent className='card-content' sx={{ p: 4 }}>
+
+                            <Box className="card-content-container" >
+                                <Box>
+
+                                    <Typography gutterBottom variant="h5" color="text.secondary" sx={{ fontWeight: 500 }}>
+                                        PHP & MySQL & SCSS
+                                    </Typography>
+
+                                    <Typography gutterBottom variant="h4" sx={{ mt: 3 }}>
+                                    Developing Pinterest for fun
+                                    </Typography>
+
+                                </Box>
+                            </Box>
+
+                            <Box className="card-image-container" sx={{ mt: 6 }}>
+                                <CardMedia
+                                    component="img"
+                                    alt="profile image"
+                                    sx={{}}
+                                    image={project6}
+                                />
+                            </Box>
+
+                        </CardContent>
+
+                        <CardActions className="card-click">
+                            <Typography onClick={() => props.toggleProject('6')}>
+                            </Typography>
                         </CardActions>
                     </Card>
                 </Grid>

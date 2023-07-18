@@ -9,17 +9,11 @@ import BokehBackground from './components/BokehBackground/BokehBackground';
 
 function App() {
 
-    // const [bodyHasExplodedClass, setbodyHasExplodedClass] = useState(false);
     const [ActiveProject, setActiveProject] = useState(false);
-
-    console.log(ActiveProject);
 
     function toggleProject(projectName) {
 
         setActiveProject(projectName)
-
-        console.log('toggggii');
-        console.log(ActiveProject);
 
         if (projectName !== false) {
             document.querySelector('body').classList.add('project-open')
