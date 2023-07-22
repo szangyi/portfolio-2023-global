@@ -3,6 +3,12 @@
     height: 100vh;
 }
 
+@media (max-width: 900px) {
+    .banner {
+        height: 90vh;
+    }
+}
+
 .banner button {
     position: absolute;
     right: 20px;
@@ -96,6 +102,12 @@ body {
     border-radius: 0 0 5vmin 5vmin;
 }
 
+/* @media (max-width: 900px) {
+    .page {
+        height: fit-content;
+
+    }
+} */
 
 
 /* TRANSITIONS */
@@ -106,7 +118,7 @@ body {
 
 .line {
     overflow: hidden;
-    display:block;
+    display: block;
 }
 
 
@@ -133,8 +145,7 @@ body {
 }
 
 .shine-container:hover,
-.shine-container.active
- {
+.shine-container.active {
     --hover: 1;
     --pos: 1;
 }

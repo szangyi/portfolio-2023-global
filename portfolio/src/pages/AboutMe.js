@@ -70,23 +70,22 @@ const AboutMe = (props) => {
                             </Typography>
                         </Grid>
 
-                        <Grid className="aboutme-links-section" item container xs={12} md={5} sx={{ height: 'fit-content' }}>
+                        <Grid className="aboutme-links-section" item container xs={12} md={5} sx={{ height: 'fit-content', mt: {xs: 3, md: 0} }}>
 
 
-                            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', mb: .8 }}>
+                            <Grid item xs={4} md={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', mb: .8 }}>
                                 <Typography variant="h6" sx={{ fontFamily: 'Hanken Grotesk', textTransform: 'uppercase' }}>Name</Typography>
                             </Grid>
-                            <Grid item xs={9} sx={{ display: 'flex', gap: 1 }}>
+                            <Grid item xs={8} md={9} sx={{ display: 'flex', gap: 1 }}>
                                 <Typography variant="paragraph" >
                                     Alexandra Meszaros
                                 </Typography>
                             </Grid>
 
-
-                            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <Grid item xs={4} md={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', mb: {xs: .8, md: 0} }}>
                                 <Typography variant="h6" sx={{ fontFamily: 'Hanken Grotesk', textTransform: 'uppercase' }}>Email</Typography>
                             </Grid>
-                            <Grid item xs={9} >
+                            <Grid item xs={8} md={9} >
                                 <Link sx={{ display: 'flex', gap: 1 }} href={'mailto:alexandra.mszrs@gmail.com'}>
                                     <Typography variant="paragraph" sx={{ color: 'white', textDecoration: 'none' }}>
                                         alexandra.mszrs@gmail.com
@@ -96,10 +95,10 @@ const AboutMe = (props) => {
                                 </Link>
                             </Grid>
 
-                            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <Grid item xs={4} md={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                 <Typography variant="h6" sx={{ fontFamily: 'Hanken Grotesk', textTransform: 'uppercase' }}>Accounts</Typography>
                             </Grid>
-                            <Grid item xs={9} >
+                            <Grid item xs={8} md={9} >
                                 <Link sx={{ display: 'flex', gap: 1 }} target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/meszarosalexandra/'}>
                                     <Typography variant="paragraph" sx={{ color: 'white', textDecoration: 'none' }}>
                                         Linkedin
@@ -108,10 +107,10 @@ const AboutMe = (props) => {
                                 </Link>
                             </Grid>
 
-                            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <Grid item xs={4} md={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                 <Typography variant="h6" sx={{ fontFamily: 'Hanken Grotesk', textTransform: 'uppercase' }}></Typography>
                             </Grid>
-                            <Grid item xs={9} >
+                            <Grid item xs={8} md={9} >
                                 <Link sx={{ display: 'flex', gap: 1 }} target="_blank" rel="noreferrer" href={'https://gitlab.com/szangyi'}>
                                     <Typography variant="paragraph" sx={{ color: 'white', textDecoration: 'none' }}>
                                         GitLab
@@ -120,10 +119,10 @@ const AboutMe = (props) => {
                                 </Link>
                             </Grid>
 
-                            <Grid item xs={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <Grid item xs={4} md={3} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                                 <Typography variant="h6" sx={{ fontFamily: 'Hanken Grotesk', textTransform: 'uppercase' }}></Typography>
                             </Grid>
-                            <Grid item xs={9} >
+                            <Grid item xs={8} md={9} >
                                 <Link sx={{ display: 'flex', gap: 1 }} target="_blank" rel="noreferrer" href={'https://github.com/szangyi?tab=repositories'}>
                                     <Typography variant="paragraph" sx={{ color: 'white', textDecoration: 'none' }}>
                                         Github

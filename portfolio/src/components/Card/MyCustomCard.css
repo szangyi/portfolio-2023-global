@@ -1,9 +1,4 @@
-
-
-
-.mycustomcard {
-
-}
+.mycustomcard {}
 
 
 /* CARD CHILDREN */
@@ -47,8 +42,8 @@
 /* FROM OLD HOVER EFFECT AND ALL THAT */
 
 .mycustomcard img {
-    width: stretch;
-    width: -webkit-stretch-available;
+    width: fill;
+    width: -webkit-fill-available;
     max-height: 400px;
     transform: scale(1);
     transition: .2s ease-in;
@@ -111,6 +106,12 @@
 .cards-collection {
     display: grid !important;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+@media (max-width: 900px) {
+    .cards-collection {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+    }
 }
 
 .cards-collection .card-container .mycustomcard,

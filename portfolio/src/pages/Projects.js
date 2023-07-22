@@ -39,7 +39,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content' sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>
@@ -79,7 +79,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content' sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>
@@ -118,7 +118,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content'sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>
@@ -160,7 +160,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content' sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>
@@ -198,7 +198,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content'sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>
@@ -236,7 +236,7 @@ const Projects = (props) => {
                 <Grid item className="card-container">
                     <Card className="mycustomcard glassmorphism" >
 
-                        <CardContent className='card-content' sx={{ p: 4 }}>
+                        <CardContent className='card-content' sx={{ p: {xs: 2, md: 4}  }}>
 
                             <Box className="card-content-container" >
                                 <Box>

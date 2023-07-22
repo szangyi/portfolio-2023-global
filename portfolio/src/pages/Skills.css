@@ -31,8 +31,13 @@
     .skills-section ul li svg {
         width: 20px;
     }
+
     .skills-section ul li h4 {
         transform: translateX(-20px);
+    }
+
+    .grid-item-text {
+        margin-top: 5rem;
     }
 }
 
@@ -81,9 +86,6 @@ svg g#PLUS g.active {
     fill: #B8AFA9;
 }
 
-
-
-
 .grid-container-special {
     display: grid;
 
@@ -99,6 +101,12 @@ svg g#PLUS g.active {
     display: block;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .grid-item-svg {
+        margin-top: 3rem;
+    }
 }
 
 .grid-item-svg svg {

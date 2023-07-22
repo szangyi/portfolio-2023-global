@@ -68,20 +68,31 @@
   transition: .3s opacity ease-out;
 }
 
-.sticky-menu ul li:hover {
-  opacity: 1;
-}
 
 .aboutme-links-section a svg {
   transition: .3s ease-out;
 }
 
-.aboutme-links-section a:hover svg {
-  transform: translate(2px, -2px)
+@media (min-width: 900px) {
+  .aboutme-links-section a:hover svg {
+    transform: translate(2px, -2px)
+  }
+
+  .sticky-menu ul li:hover {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {
+  .sticky-menu {
+    display: none;
+  }
+
   .aboutme-section .MuiTypography-paragraph {
-    font-size: 1.1rem;
+    font-size: .9rem;
+  }
+
+  .aboutme-links-section {
+    z-index: 100 !important;
   }
 }

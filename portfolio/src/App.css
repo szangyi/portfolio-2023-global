@@ -15,9 +15,14 @@ body {
 }
 
 
-body {
+body, #root-layout, #root {
     overflow-x: hidden;
 }
+
+.core {
+    overflow: hidden;
+}
+
 
 a {
     text-decoration: none;
