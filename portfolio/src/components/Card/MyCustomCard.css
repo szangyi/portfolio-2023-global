@@ -1,8 +1,7 @@
+
+
+
 .mycustomcard {
-
-    /* min-width: 30vw; */
-
-
 
 }
 
@@ -48,12 +47,17 @@
 /* FROM OLD HOVER EFFECT AND ALL THAT */
 
 .mycustomcard img {
-    width: fill;
-    width: -webkit-fill-available;
+    width: stretch;
+    width: -webkit-stretch-available;
     max-height: 400px;
-    filter: grayscale(1);
     transform: scale(1);
     transition: .2s ease-in;
+}
+
+@media (min-width: 50rem) {
+    .mycustomcard img {
+        filter: grayscale(1);
+    }
 }
 
 @media (max-width: 40rem) {

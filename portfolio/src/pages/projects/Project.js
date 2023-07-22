@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import Project1 from "./Project1-Henkel";
 import Project2 from "./Project2-Influencr";
 import Project3 from "./Project3-Twitter";

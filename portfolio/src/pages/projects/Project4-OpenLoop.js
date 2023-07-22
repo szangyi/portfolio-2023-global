@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Box, Chip, Grid, Typography } from "@mui/material";
 import projectimage from '../../assets/project4app.png'
 
@@ -56,7 +54,7 @@ function Project(props) {
                             <Typography sx={{ mb: .5 }}>
                                 Live site:
                             </Typography>
-                            <a target="_blank" href="https://openloop.org/" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
+                            <a target="_blank" rel="noreferrer" href="https://openloop.org/" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
                                 Link
                             </a>
                         </Grid>
@@ -65,7 +63,7 @@ function Project(props) {
             </Grid>
 
             <Box className="image-container-project" sx={{ pl: { xs: 0, md: 20 }, mt: 10 }}>
-                <img className="project-image" src={projectimage}></img>
+                <img className="project-image" alt="projectimage" src={projectimage}></img>
             </Box>
 
         </section>

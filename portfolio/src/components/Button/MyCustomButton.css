@@ -1,9 +1,6 @@
 .mycustombutton {
-    /* display: none !important; */
-    
     position: relative;
     display: inline-block;
-    cursor: pointer;
     outline: none;
     border: 0;
     vertical-align: middle;
@@ -12,10 +9,17 @@
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-
     width: 14rem;
     /* size of the button, should be adjusted when text is more */
     height: auto;
+
+    cursor: default;
+    pointer-events: none;
+}
+
+.mycustombutton.clickable {
+    cursor: pointer;
+    pointer-events: all;
 }
 
 .mycustombutton .circle {
@@ -45,16 +49,13 @@
 }
 
 .mycustombutton .circle .icon.arrow {
-    /* transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1); */
-    right: 2.1rem;
-    width: 1.125rem;
-    height: 0.125rem;
     background: none;
-
-    right: 2.7rem;
+    right: 2.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.mycustombutton .circle .icon.arrow::before {
+/* .mycustombutton .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.25rem;
@@ -68,7 +69,7 @@
     width: .9rem;
     height: .9rem;
     top: -0.4rem;
-}
+} */
 
 .mycustombutton .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);

@@ -1,18 +1,9 @@
-/* .cards-collection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-} */
 
 .projects-section {
     max-width: 100vw;
 }
 
 .project-container {
-    /* background-color: aqua; */
-    /* background-color: white; */
-    /* background-color: #BBBBBB; */
     height: 100%;
 }
 
@@ -24,6 +15,13 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 3rem;
+}
+
+@media (max-width: 900px) {
+    .image-container {
+        gap: 1rem;
+
+    }
 }
 
 .image-container-project {}
@@ -88,20 +86,6 @@
 .back-arrow:hover svg g {
     fill: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

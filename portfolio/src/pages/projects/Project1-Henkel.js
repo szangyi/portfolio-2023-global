@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Box, Chip, Grid, Typography } from "@mui/material";
 import projectimage from '../../assets/project1app.png'
 
@@ -12,10 +10,6 @@ function Project(props) {
             <Grid container sx={{ gap: 0 }}>
 
                 <Grid item xs={12} sm={2} md={5} sx={{ paddingRight: { xs: 0, sm: 2.5 }, paddingBottom: { xs: 4, sm: 0 } }}>
-                    {/* <Typography variant="body1">
-                        Back
-                    </Typography> */}
-
                     <Box className="back-arrow" onClick={() => props.toggleProject(false)}>
                         <svg x="0px" y="0px" viewBox="0 0 95.7 95.8">
                             <circle cx="47.8" cy="47.9" r="47.1"></circle>
@@ -67,7 +61,7 @@ function Project(props) {
                             <Typography sx={{mb: .5}}>
                                 Demo:
                             </Typography>
-                            <a target="_blank" href="./project1video.mp4" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
+                            <a target="_blank" rel="noreferrer" href="./project1video.mp4" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
                                 Watch demo
                             </a>
                         </Grid>
@@ -75,7 +69,7 @@ function Project(props) {
                             <Typography sx={{mb: .5}}>
                                 Live site:
                             </Typography>
-                            <a target="_blank" href="https://www.loctitex.com/" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
+                            <a target="_blank" rel="noreferrer" href="https://www.loctitex.com/" className="chip-look" sx={{ mt: .5, px: 1.5, py: .2 }}>
                                 Link
                             </a>
                         </Grid>
@@ -85,7 +79,7 @@ function Project(props) {
             </Grid>
 
             <Box className="image-container-project">
-                <img className="project-image" src={projectimage}></img>
+                <img className="project-image" alt="projectimage" src={projectimage}></img>
             </Box>
 
         </section>

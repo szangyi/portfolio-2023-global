@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Divider } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import "./Skills.css"
 import React, { useEffect } from "react";
 
@@ -8,6 +8,8 @@ const Skills = (props) => {
 
     function handleMouseover(id) {
         let parent = document.querySelector(`#${id}`);
+        let element = document.querySelector(`[data-id=${id}]`);
+        element.classList.add('active')
         Array.from(parent.children).forEach((child) => {
             child.classList.add('active');
         });
@@ -15,6 +17,8 @@ const Skills = (props) => {
 
     function handleMouseleave(id) {
         let parent = document.querySelector(`#${id}`);
+        let element = document.querySelector(`[data-id=${id}]`);
+        element.classList.remove('active')
         Array.from(parent.children).forEach((child) => {
             child.classList.remove('active');
         });
@@ -31,10 +35,43 @@ const Skills = (props) => {
     return (
 
         <>
-
-
             <Box component="section" className="skills-section sectionPadding" sx={{ mt: 5 }}>
                 <Grid className="grid-container-special">
+
+                <Grid className="grid-item-text">
+                        <Typography variant="h2">Skills</Typography>
+                        <Typography variant="body2">
+                            Get to know me!
+                        </Typography>
+
+                        <ul>
+                            <li onMouseOver={() => handleMouseover('CODE')} onMouseLeave={() => handleMouseleave('CODE')} className="trigger" data-id="CODE" >
+                                <svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="5" x2="20" y2="5" stroke="black" />
+                                </svg>
+                                <Typography variant="h4"> Code </Typography>
+                            </li>
+                            <li onMouseOver={() => handleMouseover('DESIGN')} onMouseLeave={() => handleMouseleave('DESIGN')} className="trigger" data-id="DESIGN" >
+                                <svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="5" x2="20" y2="5" stroke="black" />
+                                </svg>
+                                <Typography variant="h4"> Design</Typography></li>
+
+                            <li onMouseOver={() => handleMouseover('SOFT')} onMouseLeave={() => handleMouseleave('SOFT')} className="trigger" data-id="SOFT">
+                                <svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="5" x2="20" y2="5" stroke="black" />
+                                </svg>
+                                <Typography variant="h4"> Soft </Typography></li>
+                            <li onMouseOver={() => handleMouseover('PLUS')} onMouseLeave={() => handleMouseleave('PLUS')} className="trigger" data-id="PLUS" >
+                                <svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="5" x2="20" y2="5" stroke="black" />
+                                </svg>
+                                <Typography variant="h4"> Extra </Typography>
+                            </li>
+                        </ul>
+
+
+                    </Grid>
 
                     <Grid className="grid-item-svg">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.86 554.02" >
@@ -564,20 +601,7 @@ const Skills = (props) => {
                         </svg>
                     </Grid>
 
-                    <Grid className="grid-item-text">
-                        <Typography variant="h2">Skills</Typography>
-                        <Typography variant="body2">
-                            Get to know me!
-                        </Typography>
-
-                        <ul>
-                            <li><Typography onMouseOver={() => handleMouseover('CODE')} onMouseLeave={() => handleMouseleave('CODE')} className="trigger" data-id="CODE" variant="h4"> Code </Typography></li>
-                            <li><Typography onMouseOver={() => handleMouseover('DESIGN')} onMouseLeave={() => handleMouseleave('DESIGN')} className="trigger" data-id="DESIGN" variant="h4"> Design</Typography></li>
-                            <li><Typography onMouseOver={() => handleMouseover('SOFT')} onMouseLeave={() => handleMouseleave('SOFT')} className="trigger" data-id="SOFT" variant="h4"> Soft </Typography></li>
-                            <li><Typography onMouseOver={() => handleMouseover('PLUS')} onMouseLeave={() => handleMouseleave('PLUS')} className="trigger" data-id="PLUS" variant="h4"> Extra </Typography></li>
-                        </ul>
-                    </Grid>
-
+              
                 </Grid>
 
             </Box>

@@ -1,12 +1,10 @@
-import { Box, Card, CardContent, CardActions, Button, Divider, Grid, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardActions, Divider, Grid, Typography } from "@mui/material";
 import "./Projects.css"
-import React, { useEffect } from "react";
 import "../components/Card/MyCustomCard.css"
-import { Link } from "react-router-dom";
 
 import CardMedia from '@mui/material/CardMedia';
 
-import img1 from '../assets/img1.png'
+import img1 from '../assets/img1.jpg'
 import img2 from '../assets/img2.jpg'
 import img3 from '../assets/img3.jpg'
 import project1 from '../assets/project1.png'
@@ -14,7 +12,7 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
-import project6 from '../assets/placeholder.png'
+import project6 from '../assets/project6.png'
 
 
 const Projects = (props) => {
@@ -23,14 +21,14 @@ const Projects = (props) => {
 
     return (
 
-        <Box component="section" className="projects-section sectionPadding" sx={{ mt: 5 }}>
+        <Box component="section" className="sectionPadding projects-section" sx={{ mt: 5 }}>
 
             <Typography variant="h2" sx={{ mb: 3 }}>Some of my projects</Typography>
 
             <Box className="image-container">
-                <img src={img1}></img>
-                <img src={img2}></img>
-                <img src={img3}></img>
+                <img src={img1} alt="projectimage"></img>
+                <img src={img2} alt="projectimage"></img>
+                <img src={img3} alt="projectimage"></img>
             </Box>
 
             <Divider sx={{ my: 10, bgcolor: 'black' }} />

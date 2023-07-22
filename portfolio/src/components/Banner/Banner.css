@@ -14,8 +14,6 @@
     }
 }
 
-
-
 .banner .text-container {
     display: grid;
 }
@@ -43,8 +41,6 @@
     margin: auto;
     width: 500px;
     height: 500px;
-    background-image: red;
-    /* background-image: radial-gradient(#fff 0%, rgba(255, 255, 255, 0) 50%); */
     border-radius: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0, -50%, 0);
@@ -52,25 +48,12 @@
     pointer-events: none;
 }
 
-
-/* #text-box-2 {
-    transform: translateX(100vw)
-} */
-
-
-
-
-
-
-
 .tile-container {
     position: absolute;
-    /* top: 275px; */
     right: 0;
     left: 0;
     text-align: center;
     user-select: none;
-
     top: 42.5%;
 }
 
@@ -78,7 +61,7 @@
     width: 200px;
     height: 6rem;
     margin: 4px;
-    cursor: pointer;
+    cursor: default;
     display: inline-block;
     position: absolute;
 
@@ -86,14 +69,15 @@
 }
 
 .hero-1 {
-    background: #F4DB33;
-    background: black;
     background: transparent;
 }
 
-body.exploded .hero-1  {
-        background: black;
+body.exploded .hero-1 {
+    background: black;
+}
 
+body {
+    transition: ease-out
 }
 
 .page-container {
@@ -109,5 +93,115 @@ body.exploded .hero-1  {
     /* position: fixed; */
 
     /* transition: 8s; */
-    border-radius: 0 0 10vmin 10vmin;
+    border-radius: 0 0 5vmin 5vmin;
+}
+
+
+
+/* TRANSITIONS */
+[id*="text-box-1-"] {
+    transform: translate(100vw);
+    opacity: 0;
+}
+
+.line {
+    overflow: hidden;
+    display:block;
+}
+
+
+/* SHINE */
+.shine-container {
+    position: relative;
+}
+
+:root {
+    --font-size: 6rem;
+}
+
+#shine-text {
+    display: inline-block;
+    transition: all 0.2s;
+    /* font-size: var(--font-size); */
+    /* transform: translate(calc(var(--hover) * (var(--font-size) * 0.10)), calc(var(--hover) * (var(--font-size) * -0.10))); */
+}
+
+
+.shine-container {
+    --hover: 0.4;
+    --pos: 0;
+}
+
+.shine-container:hover,
+.shine-container.active
+ {
+    --hover: 1;
+    --pos: 1;
+}
+
+
+.shine-container svg {
+    position: absolute;
+    z-index: 3;
+    width: calc(var(--font-size) * 0.5);
+    aspect-ratio: 1;
+}
+
+.shine-container svg path {
+    fill: hsla(49, 93%, 77%, 0.99)
+}
+
+/* Animation for sparkles */
+
+.shine-container:hover svg,
+.shine-container.active svg {
+    animation: sparkle 1s calc((var(--delay-step) * var(--d)) * 1s) both;
+}
+
+@keyframes sparkle {
+    50% {
+        transform: translate(-50%, -50%) scale(var(--s, 1));
+    }
+}
+
+.shine-container svg {
+    --delay-step: 0.20;
+    top: calc(var(--y, 50) * 1%);
+    left: calc(var(--x, 0) * 1%);
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.shine-container svg:nth-of-type(1) {
+    --x: 0;
+    --y: 20;
+    --s: 1.1;
+    --d: 1;
+}
+
+.shine-container svg:nth-of-type(2) {
+    --x: 15;
+    --y: 80;
+    --s: 1.25;
+    --d: 2;
+}
+
+.shine-container svg:nth-of-type(3) {
+    --x: 45;
+    --y: 40;
+    --s: 1.1;
+    --d: 3;
+}
+
+.shine-container svg:nth-of-type(4) {
+    --x: 25;
+    --y: 40;
+    --s: 0.9;
+    --d: 2;
+}
+
+.shine-container svg:nth-of-type(5) {
+    --x: 100;
+    --y: 30;
+    --s: 0.8;
+    --d: 4;
 }
